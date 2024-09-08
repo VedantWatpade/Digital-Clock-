@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+    <div class="container">
+        <!-- Digital Clock Display -->
+        <div class="clock">
+            <div id="time"></div>
+            <div id="date"></div>
+            <button id="toggle-format">Switch to 12-hour format</button>
+            <button id="toggle-theme">Switch Theme</button>
+        </div>
+        
+        <!-- World Clock Feature -->
+        <div class="world-clock">
+            <h2>World Clock</h2>
+            <select id="timezone">
+                <option value="UTC">UTC</option>
+                <option value="America/New_York">New York (EST)</option>
+                <option value="Europe/London">London (GMT)</option>
+                <option value="Asia/Tokyo">Tokyo (JST)</option>
+                <option value="Australia/Sydney">Sydney (AEDT)</option>
+            </select>
+            <div id="world-time"></div>
+        </div>
+
+        <!-- Stopwatch Feature -->
+        <div class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div id="stopwatch-time">00:00:00</div>
+            <button id="start-stopwatch">Start</button>
+            <button id="stop-stopwatch">Stop</button>
+            <button id="reset-stopwatch">Reset</button>
+        </div>
+        
+        <!-- Weather Display -->
+        <div class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">Loading weather...</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

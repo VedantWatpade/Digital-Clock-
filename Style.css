@@ -1,0 +1,55 @@
+body.dark {
+    background-color: #282c34;
+    color: #e0e0e0; /* Lighter color for better contrast */
+}
+
+body.light {
+    background-color: #f0f0f0;
+    color: #282c34; /* Darker color for better contrast */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #20232a;
+    font-weight: bold; /* Make text bold for better readability */
+    transition: background-color 0.3s, color 0.3s; /* Add transitions for smoother effect */
+}
+
+button:hover {
+    background-color: #4bb7d8; /* Slightly darker on hover */
+}
+
+.clock, .world-clock, .stopwatch, .weather {
+    margin-bottom: 20px;
+    color: inherit; /* Inherit color from body */
+}
+
+#time, #stopwatch-time, #world-time {
+    color: #e0e0e0; /* Ensure text is readable in dark mode */
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px #000; /* Add shadow for better contrast */
+}
+
+#date {
+    font-size: 30px;
+    color: #e0e0e0;
+}
+
+.select, #timezone {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #40444b;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.weather, .stopwatch {
+    color: #e0e0e0; /* Ensure text is readable in dark mode */
+}
